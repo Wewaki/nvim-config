@@ -94,6 +94,6 @@ vim.keymap.set(
 -- Map jk in terminal mode to exit to normal mode
 vim.api.nvim_set_keymap('t', 'jk', [[<C-\><C-n>]], { noremap = true, silent = true })
 -- use diff v split
---vim.keymap.set("n", "<leader>gd", ":Gvdiffsplit<CR>", { desc = "Git Vertical Diff" })
+vim.keymap.set("n", "<leader>gd", ":Gvdiffsplit<CR>", { desc = "Git Vertical Diff" })
 
 

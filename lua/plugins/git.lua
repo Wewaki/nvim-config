@@ -21,11 +21,8 @@ return {
       "Ggrep",
       "GMove",
       "GRemove"
-    },
-    config = function()
-      -- Optional: Set up a keymap for vertical diff
-      vim.keymap.set("n", "<leader>gd", ":Gvdiffsplit<CR>", { desc = "Git vertical diff" })
-    end
+    }
+    
   }
 }
 
