@@ -14,7 +14,7 @@ return {
     cmd = {
       "Git",
       "G",
-      "Gvdiffsplit",  -- vertical split command
+      "Gvdiffsplit",
       "Gwrite",
       "Gread",
       "Glog",
@@ -22,7 +22,6 @@ return {
       "GMove",
       "GRemove"
     }
-    
   }
 }
 

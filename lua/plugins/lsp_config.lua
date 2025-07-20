@@ -4,13 +4,11 @@ return {
     "neovim/nvim-lspconfig",
     lazy = false,
     dependencies = {
-
       {
         "pmizio/typescript-tools.nvim",
         dependencies = { "nvim-lua/plenary.nvim" },
         config = function()
           local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
           require("typescript-tools").setup({
             capabilities = capabilities,
             -- optional: you can add your custom settings here
@@ -21,11 +19,9 @@ return {
         end,
       },
     },
-
     config = function()
       local lspconfig = require("lspconfig")
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
       -- HTML
       lspconfig.html.setup({
         capabilities = capabilities,
@@ -34,7 +30,6 @@ return {
           "--stdio" 
         },
       })
-
       -- CSS
       lspconfig.cssls.setup({
         capabilities = capabilities,
@@ -43,7 +38,6 @@ return {
           "--stdio" 
         },
       })
-
       -- Python
       lspconfig.pyright.setup({
         capabilities = capabilities,
@@ -52,7 +46,6 @@ return {
           "--stdio"
         },
       })
-
       -- Bash
       lspconfig.bashls.setup({
         capabilities = capabilities,
@@ -63,7 +56,6 @@ return {
       })
     end,
   },
-
   {
     -- Optional: Add LuaSnip snippets (VSCode-style)
     "rafamadriz/friendly-snippets",

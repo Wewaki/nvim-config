@@ -15,7 +15,6 @@ return {
       highlight NeoTreeEndOfBuffer guibg=NONE ctermbg=NONE
       highlight NeoTreeWinSeparator guibg=NONE ctermbg=NONE
     ]]
-
     -- Optional: set termguicolors if not set elsewhere
     vim.opt.termguicolors = true
   end,
